@@ -9,3 +9,13 @@
 > Finally for my visualizations, I used seaborn and folium. Folium is a helpful tool when trying to analyze the spread of rental prices on a particular date. Seaborn is more helpful when selecting a single zip code and analyzing it's change in rental price over time. Examples of both visualizations are attached below. Note however, for the geographical visualization is not optimized. 
 
 > Given access to a distributed environment, I would've used pyspark instead of pandas and sqlalchemy. I've given an example of what that would look like below just as a proof of concept. In an industrial enviornment this pipeline should also use a workflow automation tool to detect changes as the CSV grows, like Airflow.
+
+
+## To run the ETL pipeline 
+Specify the source csv via and postgresqldb url 
+```bash
+python interview_0.py --csv_file=/path/to/csv --postgrep_url='postgresql://url/'
+
+```
+## To run the visualizations
+See the interview_0.ipynb which contains the visualization functions
